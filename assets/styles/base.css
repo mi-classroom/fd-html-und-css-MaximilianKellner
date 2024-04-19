@@ -1,0 +1,37 @@
+html,
+body {
+  background-color: var(--color-bg);
+  font-family: source-sans-3, Arial, sans-serif;
+  font-weight: var(--fw-regular);
+  font-size: var(--m);
+
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--fw-bold);
+}
+
+h1 {
+  font-size: var(--xl);
+  padding: var(--m);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--l);
+}
+
+h3 {
+  font-size: var(--m);
+}
+
+section {
+  margin: var(--m);
+}
