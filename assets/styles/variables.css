@@ -32,4 +32,8 @@
 
   --color-light: #e8e8e8;
   --color-lightest: #fff;
+
+  --quat: calc(var(--m))/4;
+  --halv: calc(var(--m))/2;
+  
 }

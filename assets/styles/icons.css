@@ -16,6 +16,8 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
+
+  margin-right: var(--xs);
 }
 
 .has-icon::before {
@@ -36,6 +38,10 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
+
+  position: absolute;
+
+
 }
 
 .icon--s {

@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
 }
 
 /* Fav Item
@@ -15,6 +16,8 @@
   padding: var(--s) var(--m) var(--s) var(--s);
   position: relative;
   margin: var(--s);
+  
+  display: inline-flex;
 
   &::before{
     position: absolute;
@@ -53,4 +56,24 @@
     background-color: var(--color-white);
     margin: 0;
     padding: 0;
+}
+
+.verlaufcard{
+    background-color: var(--color-lightest);
+    margin: var(--xs);
+    width: 350px;
+    max-width: 90%;
+
+}
+
+/*fixen*/
+footer{
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    padding: var(--s);
+    text-align: center;
+
+    ::before{
+        content: "»";
+    }
 }
