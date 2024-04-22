@@ -1,3 +1,15 @@
+
+nav-bar{
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav-item{
+background-color: rebeccapurple;
+}
+
 /* Fav List
 ---------------------------------------------------------------------------- */
 
@@ -61,19 +73,64 @@
 .verlaufcard{
     background-color: var(--color-lightest);
     margin: var(--xs);
-    width: 350px;
-    max-width: 90%;
+  
+    figure{
+      margin: 0;
+      padding: 0;
+    }
 
+    figcaption{
+      padding: var(--xs);
+    }
+
+    img{
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+
+    h3{
+      margin: 0;
+      font-weight: var(--fw-bold);
+    }
+
+    address{
+      font-weight: var(fw-light);
+      font-size: var(--s);
+      font-style: normal;
+      margin: 0 0 var(--xxs) 0;
+    }
 }
+
+  .tag-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--xxxs);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tag-item{
+    background-color: var(--color-bg);
+    padding: 0 var(--xxxs) 0  var(--xs);
+    font-size: var(--xs);
+    font-weight: var( --fw-medium);
+  }
 
 /*fixen*/
 footer{
+      list-style-type: none;
     background-color: var(--color-orange);
     color: var(--color-white);
     padding: var(--s);
     text-align: center;
 
     ::before{
-        content: "»";
+        content: "» ";
+    }
+
+    ul{
+      list-style-type: none;
     }
 }
