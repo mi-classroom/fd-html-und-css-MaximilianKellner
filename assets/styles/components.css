@@ -1,13 +1,54 @@
+.kopfzeile {
+  background-color: var(--color-bg);
+  margin: 0;
+  padding: 0;
 
-nav-bar{
-  display: flex;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
+  h1 {
+    display: flex;
+    background-color: var(--color-white);
+  }
 }
 
-nav-item{
-background-color: rebeccapurple;
+.nav-bar {
+  background-color: var(--color-white);
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  list-style-type: none;
+  flex: 1;
+  text-align: center;
+  padding: var(--xs);
+
+  &:hover {
+    background-color: var(--color-bg);
+    font-weight: var(--fw-bold);
+  }
+
+  a {
+    text-decoration-line: none;
+  }
+}
+
+.suche {
+  background-color: var(--color-white);
+  color: #696969;
+
+  margin-top: var(--m);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: center;
+
+  h2 {
+    margin: var(--s);
+    padding: 0;
+    font-weight: var(--fw-regular);
+    font-size: var(--m);
+  }
 }
 
 /* Fav List
@@ -17,7 +58,6 @@ background-color: rebeccapurple;
   margin: 0;
   padding: 0;
   list-style: none;
-
 }
 
 /* Fav Item
@@ -26,12 +66,13 @@ background-color: rebeccapurple;
 .fav-item {
   background-color: var(--color-lightest);
   padding: var(--s) var(--m) var(--s) var(--s);
-  position: relative;
-  margin: var(--s);
-  
-  display: inline-flex;
+  margin: var(--s) 0 var(--s) 0;
+  display: flex;
 
-  &::before{
+  align-items: center;
+
+  /* was soll das machen? */
+  &::before {
     position: absolute;
     font-size: var(--xxl);
     display: flex;
@@ -42,95 +83,101 @@ background-color: rebeccapurple;
     bottom: 0;
   }
 
-  p, address{
+  p,
+  address {
     margin: 0;
     font-style: normal;
     margin-left: var(--xxxl);
     line-height: var(--lh-tight);
+    font-weight: var(--fw-regular);
+    font-size: var(--s);
   }
 
-  p{
+  h3 {
+    margin: 0;
     font-weight: var(--fw-medium);
   }
 
-  address{
-    font-size: smaller;
+  address {
+    margin: 0;
+    justify-content: start;
+    align-items: end;
+  }
+
+  .text-space {
+    text-align: left;
   }
 }
 
-.wilkommensbanner{
-    background-color: var(--color-orange);
-    color: var(--color-white);
-    padding: var(--s);
+.wilkommensbanner {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  padding: var(--s);
 }
 
-.kopfzeile{
-    background-color: var(--color-white);
+.verlaufcard {
+  background-color: var(--color-lightest);
+  margin-top: var(--m);
+
+  figure {
     margin: 0;
     padding: 0;
+  }
+
+  figcaption {
+    padding: var(--xs);
+  }
+
+  img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: var(--fw-bold);
+  }
+
+  address {
+    font-weight: var(fw-light);
+    font-size: var(--s);
+    font-style: normal;
+    margin: 0 0 var(--xxs) 0;
+  }
 }
 
-.verlaufcard{
-    background-color: var(--color-lightest);
-    margin: var(--xs);
-  
-    figure{
-      margin: 0;
-      padding: 0;
-    }
-
-    figcaption{
-      padding: var(--xs);
-    }
-
-    img{
-      width: 100%;
-      aspect-ratio: 16/9;
-      object-fit: cover;
-    }
-
-    h3{
-      margin: 0;
-      font-weight: var(--fw-bold);
-    }
-
-    address{
-      font-weight: var(fw-light);
-      font-size: var(--s);
-      font-style: normal;
-      margin: 0 0 var(--xxs) 0;
-    }
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--xxxs);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-  .tag-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--xxxs);
+.tag-item {
+  background-color: var(--color-bg);
+  padding: 0 var(--xs) 0 var(--xs);
+  font-size: var(--xs);
+  font-weight: var(--fw-medium);
+}
+
+/*fixen*/
+footer {
+  list-style-type: none;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  padding: var(--s);
+  text-align: left;
+
+  li:before {
+    content: "» ";
+  }
+
+  ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
-
-  .tag-item{
-    background-color: var(--color-bg);
-    padding: 0 var(--xxxs) 0  var(--xs);
-    font-size: var(--xs);
-    font-weight: var( --fw-medium);
-  }
-
-/*fixen*/
-footer{
-      list-style-type: none;
-    background-color: var(--color-orange);
-    color: var(--color-white);
-    padding: var(--s);
-    text-align: center;
-
-    ::before{
-        content: "» ";
-    }
-
-    ul{
-      list-style-type: none;
-    }
 }
