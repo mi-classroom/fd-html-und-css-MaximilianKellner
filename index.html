@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProjectSurvival4All-Th Köln</title>
 
-    <link rel="stylesheet" href="../assets/styles/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/fonts.css" />
-    <link rel="stylesheet" href="./assets/styles/icons.css" />
-    <link rel="stylesheet" href="./assets/styles/variables.css" />
-    <link rel="stylesheet" href="./assets/styles/base.css" />
-    <link rel="stylesheet" href="./assets/styles/components.css" />
-    
+    <link rel="stylesheet" href="./assets/styles/main.css" />
   </head>
   <body>
     <header class="kopfzeile">
       <h1>
         <img src="./images/p4all.svg" alt="Logo" width="200" />
       </h1>
+
+      <div>
+        <form class="keyword-search for-small-viewports is-hidden">
+          <input type="search" id="search" name="search" placeholder="Suchen" />
+          <button type="submit">
+            <span class="icon icon--l">search</span>
+          </button>
+        </form>
+      </div>
 
       <ul class="nav-bar">
         <li class="nav-item"><a href="#">Mein Bereich</a></li>
@@ -130,10 +133,7 @@
         <li>
           <span class="icon icon--xl">folder</span>
 
-
           <h3>Datenbanken 1</h3>
-
-          
         </li>
         <li>
           <span class="icon icon--xl">folder</span>
@@ -194,27 +194,31 @@
       </article>
     </section>
     <footer>
-      <span>
+      <div>
         <h4>Barrierefreiheit</h4>
         <ul>
           <li>leichte Sprache</li>
           <li>leichte Sprache</li>
         </ul>
-      </span>
+      </div>
 
-      <h4>Feedback</h4>
-      <ul>
-        <li>Verbesserungsvorschläge</li>
-        <li>Content Vorschläge</li>
-        <li>Feedback</li>
-      </ul>
+      <div>
+        <h4>Feedback</h4>
+        <ul>
+          <li>Verbesserungsvorschläge</li>
+          <li>Content Vorschläge</li>
+          <li>Feedback</li>
+        </ul>
+      </div>
 
-      <h4>Rechtliche Informationen</h4>
-      <ul>
-        <li>Verantwortliche</li>
-        <li>Impressum</li>
-        <li>Datenschutzhinweise</li>
-      </ul>
+      <div>
+        <h4>Rechtliche Informationen</h4>
+        <ul>
+          <li>Verantwortliche</li>
+          <li>Impressum</li>
+          <li>Datenschutzhinweise</li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
