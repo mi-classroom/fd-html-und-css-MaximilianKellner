@@ -143,11 +143,13 @@
     object-fit: cover;
   }
 
+  /* stylelint-disable-next-line no-descending-specificity */
   h3 {
     margin: 0;
     font-weight: var(--fw-bold);
   }
 
+  /* stylelint-disable-next-line no-descending-specificity */
   address {
     margin: 0 0 var(--xxs) 0;
     font-size: var(--s);
@@ -180,6 +182,7 @@ footer {
   list-style-type: none;
   text-align: left;
 
+  /* stylelint-disable-next-line no-descending-specificity */
   li::before {
     content: "» ";
   }
