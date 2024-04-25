@@ -72,7 +72,12 @@
 
   align-items: center;
 
-  /* was soll das machen? */
+  /*
+  Für die Icons:
+  font family auf die icon font setzten
+  dann den content auf den icon namen wie im div
+  
+  */
   &::before {
     position: absolute;
     font-size: var(--xxl);
@@ -181,4 +186,11 @@ footer {
     padding: 0;
     margin: 0;
   }
+}
+
+
+.cm{
+  width: 1cm;
+  background-color: red;
+  height: 1cm;
 }
