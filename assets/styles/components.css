@@ -54,15 +54,23 @@
     }
   }
 
-  button {
+  .hamburger {
     border: none;
     background-color: transparent;
     cursor: pointer;
+
+    &.is-active::before {
+      content: "close";
+    }
+
+    &:not(.is-active)::before {
+      content: "menu";
+    }
   }
 }
 
 @media (width <= 400px) {
-  .nav-text-bar-wrapper {
+  .nav-text-bar {
     display: none;
   }
 }

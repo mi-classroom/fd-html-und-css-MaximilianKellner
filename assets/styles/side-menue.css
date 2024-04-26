@@ -5,7 +5,7 @@
   left: 0;
   display: flex;
   width: 200px;
-  height: calc(100vh - var(--xl) * 2);
+  height: 100vh;
   flex-direction: column;
   padding: var(--xl);
   background-color: var(--color-grey);
