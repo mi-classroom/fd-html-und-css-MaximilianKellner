@@ -8,8 +8,6 @@
 /* Prevent font size inflation */
 html {
   text-size-adjust: none;
-  text-size-adjust: none;
-  text-size-adjust: none;
 }
 
 /* Remove default margin in favour of better control in authored CSS */

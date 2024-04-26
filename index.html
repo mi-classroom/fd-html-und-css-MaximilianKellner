@@ -14,7 +14,7 @@
       </h1>
 
       <div>
-        <form class="keyword-search for-small-viewports is-hidden">
+        <form class="keyword-search for-large-viewports">
           <input type="search" id="search" name="search" placeholder="Suchen" />
           <button type="submit">
             <span class="icon icon--l">search</span>
@@ -22,13 +22,18 @@
         </form>
       </div>
 
-      <ul class="nav-bar">
-        <li class="nav-item"><a href="#">Mein Bereich</a></li>
-        <li class="nav-item"><a href="#">Suche</a></li>
-        <li class="nav-item"><a href="#">Aktuelles</a></li>
-      </ul>
+      <nav class="nav-text-bar-wrap">
+        <ul class="nav-text-bar">
+          <li><a href="#">News</a></li>
+          <li><a href="#">Barrierefreiheit</a></li>
+          <li><a href="#">De</a></li>
+          <li><span class="icon icon--xl">account_circle</span></li>
+        </ul>
 
-      <section class="suche">
+        <button class="icon icon--xl">menu</button>
+      </nav>
+
+      <section class="suche is-hidden">
         <h2>Suche</h2>
         <span class="icon">search</span>
       </section>
@@ -56,143 +61,158 @@
                 deine Projekterfahrung auf das nächste Level heben kann</p>
         </dialog>
     -->
-
-    <section class="wilkommensbanner">
-      <h2>Wilkommen</h2>
-      <p class="test">
-        In der Bearbeitung von Projekten ist es von entscheidender Bedeutung,
-        nicht nur theoretisches Wissen zu besitzen, sondern auch praxiserprobte
-        Methoden, bewährte Tricks und den souveränen Umgang mit möglichen
-        Stolpersteinen zu beherrschen. Hier setzt ProjectSurvival4All an, eine
-        innovative Plattform in Zusammenarbeit mit der TH Köln, die entwickelt
-        wurde, um dich und dein Team bei Projektarbeiten und im Studium optimal
-        zu unterstützen. Hier erwarten dich erstklassige Inhalte von erfahrenen
-        Dozenten, die dir Best Practices und kuratiertes Wissen auf eine
-        interessante und effiziente Weise vermitteln. Schau einfach mal vorbei
-        und entdecke, wie ProjectSurvival4All deine Projekterfahrung auf das
-        nächste Level heben kann
-      </p>
-
-      <a href="./about/about-the-project.html">Über diese Seite</a>
-    </section>
-    <section>
-      <h2>Favoriten</h2>
-      <ul class="item-list is-grid">
-        <li>
-          <span class="icon icon--xl"
-            ><span class="material-symbols-outlined"> description </span></span
-          >
-          <div class="text-space">
-            <h3>Wie baue ich eine Präsentation auf?</h3>
-            <address>Monika Engelen</address>
-          </div>
-        </li>
-
-        <li>
-          <span class="icon icon--xl"
-            ><span class="material-symbols-outlined"> description </span></span
-          >
-          <div class="text-space">
-            <h3>Wie erstelle ich eine Agenda?</h3>
-            <address>Monika Engelen</address>
-          </div>
-        </li>
-
-        <li>
-          <span class="icon icon--xl">smart_display</span>
-          <div class="text-space">
-            <h3>Wie halte ich einen Pitch?</h3>
-            <address>Monika Engelen</address>
-          </div>
-        </li>
-
-        <li>
-          <span class="icon icon--xl"
-            ><span class="material-symbols-outlined"> description </span></span
-          >
-          <div class="text-space">
-            <h3>Wie baue ich eine Präsentation auf?</h3>
-            <address>Monika Engelen</address>
-          </div>
-        </li>
-
-        <li>
-          <span class="icon icon--xl">smart_display</span>
-          <div class="text-space">
-            <h3>Wie erstelle ich eine Agenda?</h3>
-            <address>Monika Engelen</address>
-          </div>
-        </li>
+    <main>
+      <ul class="nav-bar">
+        <li class="nav-item"><a href="#">Mein Bereich</a></li>
+        <li class="nav-item"><a href="#">Suche</a></li>
+        <li class="nav-item"><a href="#">Aktuelles</a></li>
       </ul>
-    </section>
 
-    <section>
-      <h2>Von deinem ILU Schreibtisch</h2>
+      <section class="wilkommensbanner">
+        <h2>Wilkommen</h2>
+        <p class="test">
+          In der Bearbeitung von Projekten ist es von entscheidender Bedeutung,
+          nicht nur theoretisches Wissen zu besitzen, sondern auch
+          praxiserprobte Methoden, bewährte Tricks und den souveränen Umgang mit
+          möglichen Stolpersteinen zu beherrschen. Hier setzt
+          ProjectSurvival4All an, eine innovative Plattform in Zusammenarbeit
+          mit der TH Köln, die entwickelt wurde, um dich und dein Team bei
+          Projektarbeiten und im Studium optimal zu unterstützen. Hier erwarten
+          dich erstklassige Inhalte von erfahrenen Dozenten, die dir Best
+          Practices und kuratiertes Wissen auf eine interessante und effiziente
+          Weise vermitteln. Schau einfach mal vorbei und entdecke, wie
+          ProjectSurvival4All deine Projekterfahrung auf das nächste Level heben
+          kann
+        </p>
 
-      <ul class="item-list is-inline">
-        <li>
-          <span class="icon icon--xl">folder</span>
+        <a href="./about/about-the-project.html">Über diese Seite</a>
+      </section>
+      <section>
+        <h2>Favoriten</h2>
+        <ul class="item-list is-grid">
+          <li>
+            <span class="icon icon--xl"
+              ><span class="material-symbols-outlined">
+                description
+              </span></span
+            >
+            <div class="text-space">
+              <h3>Wie baue ich eine Präsentation auf?</h3>
+              <address>Monika Engelen</address>
+            </div>
+          </li>
 
-          <h3>Datenbanken 1</h3>
-        </li>
-        <li>
-          <span class="icon icon--xl">folder</span>
-          <h3>Kommunikationstechnik und Netze</h3>
-        </li>
+          <li>
+            <span class="icon icon--xl"
+              ><span class="material-symbols-outlined">
+                description
+              </span></span
+            >
+            <div class="text-space">
+              <h3>Wie erstelle ich eine Agenda?</h3>
+              <address>Monika Engelen</address>
+            </div>
+          </li>
 
-        <li>
-          <span class="icon icon--xl">folder</span>
-          <h3>Paradigmen der Programmierung</h3>
-        </li>
+          <li>
+            <span class="icon icon--xl">smart_display</span>
+            <div class="text-space">
+              <h3>Wie halte ich einen Pitch?</h3>
+              <address>Monika Engelen</address>
+            </div>
+          </li>
 
-        <li>
-          <span class="icon icon--xl">folder</span>
-          <h3>Grundlagen des Web</h3>
-        </li>
+          <li>
+            <span class="icon icon--xl"
+              ><span class="material-symbols-outlined">
+                description
+              </span></span
+            >
+            <div class="text-space">
+              <h3>Wie baue ich eine Präsentation auf?</h3>
+              <address>Monika Engelen</address>
+            </div>
+          </li>
 
-        <li>
-          <span class="icon icon--xl">folder</span>
-          <h3>Screendesign</h3>
-        </li>
-      </ul>
-    </section>
+          <li>
+            <span class="icon icon--xl">smart_display</span>
+            <div class="text-space">
+              <h3>Wie erstelle ich eine Agenda?</h3>
+              <address>Monika Engelen</address>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Verlauf</h2>
-      <article class="verlaufcard">
-        <figure>
-          <img src="./images/rednerin-praesentation.jpg" alt width="250" />
-          <figcaption>
-            <h3>Wie halte ich eine Präsentation</h3>
-            <address>Monika Engelen</address>
+      <section>
+        <h2>Von deinem ILU Schreibtisch</h2>
 
-            <ul class="tag-list">
-              <li class="tag-item">Pitch</li>
-              <li class="tag-item">Startup</li>
-              <li class="tag-item">Überzeugen</li>
-              <li class="tag-item">Visualisieren</li>
-            </ul>
-          </figcaption>
-        </figure>
-      </article>
+        <ul class="item-list is-inline">
+          <li>
+            <span class="icon icon--xl">folder</span>
 
-      <article class="verlaufcard">
-        <figure>
-          <img src="./images/pitch-strukturieren.jpg" alt width="250" />
-          <figcaption>
-            <h3>Wie halte ich einen Pitch</h3>
-            <address>Monika Engelen</address>
+            <h3>Datenbanken 1</h3>
+          </li>
+          <li>
+            <span class="icon icon--xl">folder</span>
+            <h3>Kommunikationstechnik und Netze</h3>
+          </li>
 
-            <ul class="tag-list">
-              <li class="tag-item">Pitch</li>
-              <li class="tag-item">Startup</li>
-              <li class="tag-item">Überzeugen</li>
-              <li class="tag-item">Visualisieren</li>
-            </ul>
-          </figcaption>
-        </figure>
-      </article>
-    </section>
+          <li>
+            <span class="icon icon--xl">folder</span>
+            <h3>Paradigmen der Programmierung</h3>
+          </li>
+
+          <li>
+            <span class="icon icon--xl">folder</span>
+            <h3>Grundlagen des Web</h3>
+          </li>
+
+          <li>
+            <span class="icon icon--xl">folder</span>
+            <h3>Screendesign</h3>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Verlauf</h2>
+        <article class="verlaufcard">
+          <figure>
+            <img src="./images/rednerin-praesentation.jpg" alt width="250" />
+            <figcaption>
+              <h3>Wie halte ich eine Präsentation</h3>
+              <address>Monika Engelen</address>
+
+              <ul class="tag-list">
+                <li class="tag-item">Pitch</li>
+                <li class="tag-item">Startup</li>
+                <li class="tag-item">Überzeugen</li>
+                <li class="tag-item">Visualisieren</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="verlaufcard">
+          <figure>
+            <img src="./images/pitch-strukturieren.jpg" alt width="250" />
+            <figcaption>
+              <h3>Wie halte ich einen Pitch</h3>
+              <address>Monika Engelen</address>
+
+              <ul class="tag-list">
+                <li class="tag-item">Pitch</li>
+                <li class="tag-item">Startup</li>
+                <li class="tag-item">Überzeugen</li>
+                <li class="tag-item">Visualisieren</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
+
     <footer>
       <div>
         <h4>Barrierefreiheit</h4>
