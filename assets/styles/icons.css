@@ -2,6 +2,7 @@
   display: inline-block;
   width: auto;
   height: auto;
+  margin-right: var(--xs);
   direction: ltr;
   font-family: var(--ff-icons);
   font-feature-settings: "liga";
@@ -16,11 +17,10 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
-
-  margin-right: var(--xs);
 }
 
 .has-icon::before {
+  position: absolute;
   display: inline-block;
   width: auto;
   height: auto;
@@ -38,8 +38,6 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
-
-  position: absolute;
 
 
 }

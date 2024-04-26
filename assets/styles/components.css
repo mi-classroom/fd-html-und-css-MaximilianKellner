@@ -1,28 +1,29 @@
 .kopfzeile {
-  background-color: var(--color-bg);
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0;
+  margin: 0;
+  background-color: var(--color-white);
 
   h1 {
-    display: flex;
     background-color: var(--color-white);
   }
 }
 
 .nav-bar {
-  background-color: var(--color-white);
   display: flex;
   width: 100%;
   padding: 0;
   margin: 0;
+  background-color: var(--color-white);
 }
 
 .nav-item {
-  list-style-type: none;
   flex: 1;
+  padding: var(--s);
+  list-style-type: none;
   text-align: center;
-  padding: var(--xs);
-  color: black;
 
   &:hover {
     background-color: var(--color-bg);
@@ -34,95 +35,131 @@
   }
 }
 
+.nav-text-bar-wrap{
+background-color: var(--color-white);
+
+  .nav-text-bar {
+    justify-content: end;
+    margin: 0;
+    background-color: var(--color-white);
+  
+    li {
+      display: inline-block;
+      padding: var(--xs);
+      list-style-type: none;
+    }
+  
+    a {
+      text-decoration-line: none;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
 .suche {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--m);
   background-color: var(--color-white);
   color: #696969;
-
-  margin-top: var(--m);
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
   vertical-align: center;
 
   h2 {
-    margin: var(--s);
     padding: 0;
-    font-weight: var(--fw-regular);
+    margin: var(--s);
     font-size: var(--m);
+    font-weight: var(--fw-regular);
   }
 }
 
-/* Fav List
----------------------------------------------------------------------------- */
-
-.fav-list {
-  margin: 0;
+.item-list {
   padding: 0;
-  list-style: none;
-}
+  margin: 0;
 
-/* Fav Item
----------------------------------------------------------------------------- */
+  &.is-grid {
+    display: grid;
+    gap: var(--m);
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
 
-.fav-item {
-  background-color: var(--color-lightest);
-  padding: var(--s) var(--m) var(--s) var(--s);
-  margin: var(--s) 0 var(--s) 0;
-  display: flex;
+  &.is-inline {
+    li {
+      display: inline-flex;
+      margin-right: var(--s);
+      margin-bottom: var(--s);
+    }
+  }
 
-  align-items: center;
-
-  /* was soll das machen? */
-  &::before {
-    position: absolute;
-    font-size: var(--xxl);
+  /* stylelint-disable-next-line no-descending-specificity */
+  li {
     display: flex;
     align-items: center;
-    justify-content: center;
-    line-height: var(--l);
-    top: 0;
-    bottom: 0;
-  }
+    padding: var(--s) var(--m) var(--s) var(--s);
+    background-color: var(--color-lightest);
 
-  p,
-  address {
-    margin: 0;
-    font-style: normal;
-    margin-left: var(--xxxl);
-    line-height: var(--lh-tight);
-    font-weight: var(--fw-regular);
-    font-size: var(--s);
-  }
+    /*
+  Für die Icons:
+  font family auf die icon font setzten
+  dann den content auf den icon namen wie im div
+  
+  */
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--xxl);
+      line-height: var(--l);
+    }
 
-  h3 {
-    margin: 0;
-    font-weight: var(--fw-medium);
-  }
+    p,
+    address {
+      margin: 0;
+      margin-left: var(--xxxl);
+      font-size: var(--s);
+      font-style: normal;
+      font-weight: var(--fw-regular);
+      line-height: var(--lh-tight);
+    }
 
-  address {
-    margin: 0;
-    justify-content: start;
-    align-items: end;
-  }
+    h3 {
+      margin: 0;
+      font-weight: var(--fw-medium);
+    }
 
-  .text-space {
-    text-align: left;
+    address {
+      align-items: end;
+      justify-content: start;
+      margin: 0;
+    }
+
+    .text-space {
+      text-align: left;
+    }
   }
 }
 
 .wilkommensbanner {
+  padding: var(--s);
   background-color: var(--color-orange);
   color: var(--color-white);
-  padding: var(--s);
 }
 
 .verlaufcard {
-  background-color: var(--color-lightest);
   margin-top: var(--m);
+  background-color: var(--color-lightest);
 
   figure {
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
   figcaption {
@@ -135,50 +172,61 @@
     object-fit: cover;
   }
 
+  /* stylelint-disable-next-line no-descending-specificity */
   h3 {
     margin: 0;
     font-weight: var(--fw-bold);
   }
 
+  /* stylelint-disable-next-line no-descending-specificity */
   address {
-    font-weight: var(fw-light);
+    margin: 0 0 var(--xxs) 0;
     font-size: var(--s);
     font-style: normal;
-    margin: 0 0 var(--xxs) 0;
+    font-weight: var(fw-light);
   }
 }
 
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--xxxs);
-  list-style-type: none;
   padding: 0;
   margin: 0;
+  gap: var(--xxxs);
+  list-style-type: none;
 }
 
 .tag-item {
-  background-color: var(--color-bg);
   padding: 0 var(--xs) 0 var(--xs);
+  background-color: var(--color-bg);
   font-size: var(--xs);
   font-weight: var(--fw-medium);
 }
 
-/*fixen*/
+/* fixen */
 footer {
-  list-style-type: none;
-  background-color: var(--color-orange);
-  color: var(--color-white);
+  display: grid;
   padding: var(--s);
+  background-color: var(--color-footer);
+  color: var(--color-white);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  list-style-type: none;
   text-align: left;
 
-  li:before {
+  /* stylelint-disable-next-line no-descending-specificity */
+  li::before {
     content: "» ";
   }
 
+  div {
+    padding: 0 var(--xl) 0 var(--xl);
+    margin-top: var(--m);
+    margin-bottom: var(--m);
+  }
+
   ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
+    list-style-type: none;
   }
 }
