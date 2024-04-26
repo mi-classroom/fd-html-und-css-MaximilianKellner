@@ -1,10 +1,11 @@
-:root{
-    --color-orange: #ea5b0c;
-    --color-pink: #b62584;
-    --color-red: #c60c0f;
-    --color-white: white;
-    --color-bg: #e8e8e8;
-    --color-footer: #6c6c6c;
+:root {
+  --color-orange: #ea5b0c;
+  --color-pink: #b62584;
+  --color-red: #c60c0f;
+  --color-white: white;
+  --color-bg: #e8e8e8;
+  --color-footer: #6c6c6c;
+  --color-grey: #6c6c6c;
   --ff-icons: material-icons;
   --ff-base: source-sans-3;
   --fw-light: 300;
@@ -18,7 +19,7 @@
   --xxxs: 5px;
   --xxs: 8px;
   --xs: 10px;
-  --s:  12px;
+  --s: 12px;
   --m: 16px;
   --l: 20px;
   --xl: 24px;
@@ -26,7 +27,6 @@
   --xxxl: 40px;
   --color-light: #e8e8e8;
   --color-lightest: #fff;
-  --quat: calc(var(--m))/4;
-  --halv: calc(var(--m))/2;
-  
+  --quat: calc(var(--m)) / 4;
+  --half: calc(var(--m)) / 2;
 }

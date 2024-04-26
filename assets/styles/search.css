@@ -25,7 +25,7 @@
   
       .icon{
         margin-right: 0;
-        color: var(--color-darkest);
+        color: var(--color-white);
       }
     }
   
@@ -38,11 +38,11 @@
         display: block;
   
         input{
-          background-color: var(--color-grey-dark);;
+          background-color: var(--color-bg);;
         }
   
         button{
-          background-color: var(--color-th-orange);
+          background-color: var(--color-orange);
         }
         
       }

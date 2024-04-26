@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProjectSurvival4All-Th Köln</title>
 
-    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css"/>
+    <script src="./assets/scripts/main.js"></script>
   </head>
   <body>
     <header class="kopfzeile">
@@ -22,7 +23,7 @@
         </form>
       </div>
 
-      <nav class="nav-text-bar-wrap">
+      <nav class="nav-text-bar-wrapper">
         <ul class="nav-text-bar">
           <li><a href="#">News</a></li>
           <li><a href="#">Barrierefreiheit</a></li>
@@ -30,13 +31,21 @@
           <li><span class="icon icon--xl">account_circle</span></li>
         </ul>
 
-        <button class="icon icon--xl">menu</button>
+        <button class="hamburger icon icon--xl" data-js-main-menue-trigger>menu</button>        
       </nav>
+
+      <ul class="main-menu">
+        <li><a href="./news.html">News</a></li>
+        <li><a href="./pages/about/about-the-lecturers.html">Barrierefreiheit</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="#">DE</a></li>
+      </ul>
 
       <section class="suche is-hidden">
         <h2>Suche</h2>
         <span class="icon">search</span>
       </section>
+
     </header>
     <!--
         <dialog open  >
@@ -67,6 +76,15 @@
         <li class="nav-item"><a href="#">Suche</a></li>
         <li class="nav-item"><a href="#">Aktuelles</a></li>
       </ul>
+
+      <div>
+        <form class="keyword-search for-small-viewports">
+          <input type="search" id="search" name="search" placeholder="Suchen" />
+          <button type="submit">
+            <span class="icon icon--l">search</span>
+          </button>
+        </form>
+      </div>
 
       <section class="wilkommensbanner">
         <h2>Wilkommen</h2>
