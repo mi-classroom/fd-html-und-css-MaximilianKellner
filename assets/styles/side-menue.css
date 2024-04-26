@@ -8,10 +8,16 @@
   height: 100vh;
   flex-direction: column;
   padding: var(--xl);
+  margin: 0;
   background-color: var(--color-grey);
   gap: var(--l);
+  list-style-type: none;
   transform: translateX(-100%);
   transition: transform .8 s;
+
+  a{
+    text-decoration-line: none;
+  }
 
   &.is-active {
     transform: translateX(0);

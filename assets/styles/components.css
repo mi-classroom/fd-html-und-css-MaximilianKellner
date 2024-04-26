@@ -54,6 +54,7 @@
     }
   }
 
+ 
   .hamburger {
     border: none;
     background-color: transparent;
@@ -66,11 +67,18 @@
     &:not(.is-active)::before {
       content: "menu";
     }
+
   }
 }
 
-@media (width <= 400px) {
+@media (width <= 800px) {
   .nav-text-bar {
+    display: none;
+  }
+}
+
+@media screen and (width >= 800px) {
+  .hamburger {
     display: none;
   }
 }
