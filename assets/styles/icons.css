@@ -20,7 +20,6 @@
 }
 
 .has-icon::before {
-  position: absolute;
   display: inline-block;
   width: auto;
   height: auto;
@@ -38,8 +37,6 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
-
-
 }
 
 .icon--s {
