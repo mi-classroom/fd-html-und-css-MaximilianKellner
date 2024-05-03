@@ -1,0 +1,262 @@
+.kopfzeile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-white);
+
+  h1 {
+    background-color: var(--color-white);
+  }
+}
+
+.nav-bar {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-white);
+}
+
+.nav-item {
+  flex: 1;
+  padding: var(--s);
+  list-style-type: none;
+  text-align: center;
+
+  &:hover {
+    background-color: var(--color-bg);
+    font-weight: var(--fw-bold);
+  }
+
+  a {
+    text-decoration-line: none;
+  }
+}
+
+.nav-text-bar-wrapper {
+  background-color: var(--color-white);
+
+  .nav-text-bar {
+    justify-content: end;
+    margin: 0;
+    background-color: var(--color-white);
+
+    li {
+      display: inline-block;
+      padding: var(--xs);
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration-line: none;
+    }
+  }
+
+ 
+  .hamburger {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &.is-active::before {
+      content: "close";
+    }
+
+    &:not(.is-active)::before {
+      content: "menu";
+    }
+
+  }
+}
+
+@media (width <= 1000px) {
+  .nav-text-bar {
+    display: none;
+  }
+}
+
+@media screen and (width >= 1000px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.suche {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--m);
+  background-color: var(--color-white);
+  color: #696969;
+  vertical-align: center;
+
+  h2 {
+    padding: 0;
+    margin: var(--s);
+    font-size: var(--m);
+    font-weight: var(--fw-regular);
+  }
+}
+
+.item-list {
+  padding: 0;
+  margin: 0;
+
+  &.is-grid {
+    display: grid;
+    gap: var(--m);
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+  &.is-inline {
+    li {
+      display: inline-flex;
+      margin-right: var(--s);
+      margin-bottom: var(--s);
+    }
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  li {
+    display: flex;
+    align-items: center;
+    padding: var(--s) var(--m) var(--s) var(--s);
+    background-color: var(--color-lightest);
+
+    /*
+  Für die Icons:
+  font family auf die icon font setzten
+  dann den content auf den icon namen wie im div
+  
+  */
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--xxl);
+      line-height: var(--l);
+    }
+
+    p,
+    address {
+      margin: 0;
+      margin-left: var(--xxxl);
+      font-size: var(--s);
+      font-style: normal;
+      font-weight: var(--fw-regular);
+      line-height: var(--lh-tight);
+    }
+
+    h3 {
+      margin: 0;
+      font-weight: var(--fw-medium);
+    }
+
+    address {
+      align-items: end;
+      justify-content: start;
+      margin: 0;
+    }
+
+    .text-space {
+      text-align: left;
+    }
+  }
+}
+
+.wilkommensbanner {
+  padding: var(--s);
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.verlauf-grid{
+  display: grid;
+  gap: var(--m);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+}
+
+.verlaufcard {
+  max-width: 500px;
+  margin-top: var(--m);
+  background-color: var(--color-lightest);
+
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+
+  figcaption {
+    padding: var(--xs);
+  }
+
+  img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  h3 {
+    margin: 0;
+    font-weight: var(--fw-bold);
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  address {
+    margin: 0 0 var(--xxs) 0;
+    font-size: var(--s);
+    font-style: normal;
+    font-weight: var(fw-light);
+  }
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: var(--xxxs);
+  list-style-type: none;
+}
+
+.tag-item {
+  padding: 0 var(--xs) 0 var(--xs);
+  background-color: var(--color-bg);
+  font-size: var(--xs);
+  font-weight: var(--fw-medium);
+}
+
+/* fixen */
+footer {
+  display: grid;
+  padding: var(--s);
+  background-color: var(--color-footer);
+  color: var(--color-white);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  list-style-type: none;
+  text-align: left;
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  li::before {
+    content: "» ";
+  }
+
+  div {
+    padding: 0 var(--xl) 0 var(--xl);
+    margin-top: var(--m);
+    margin-bottom: var(--m);
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}
