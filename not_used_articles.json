@@ -1,0 +1,292 @@
+{
+    "articles": [
+      {
+        "id": "0",
+        "date": "2024-02-02T04:14:54-08:00",
+        "draft": false,
+        "title": "Welche Finanzierungsoptionen stehen einem Startup zur Verfügung?",
+        "author": "John Doe",
+        "tags": {
+          "projectphase": ["Projektidee", "Projektstart"],
+          "keywords": [
+            "Finanzierung",
+            "Startup",
+            "Eigenkapital",
+            "Fremdkapital",
+            "Crowdfunding",
+            "Förderprogramme"
+          ],
+          "modules": ["Projektmanagement"],
+          "fileFormat": ["pdf"]
+        },
+        "teaserImg": "finanzen-moeglichkeiten.jpg",
+        "description": "Eine Übersicht über verschiedene Finanzierungsquellen für Startups, einschließlich Eigenkapital, Fremdkapital, Crowdfunding, Venture Capital und staatliche Förderprogramme.",
+        "content": ""
+      },
+      {
+        "id": "1",
+        "date": "2024-02-02T04:14:54-08:00",
+        "draft": false,
+        "title": "Wie validiere ich meine Geschäftsidee, bevor ich ein Startup gründe?",
+        "author": "John Doe",
+        "tags": {
+          "projectphase": ["Projektidee", "Projektstart"],
+          "keywords": [
+            "Geschäftsidee",
+            "Validierung",
+            "Marktforschung",
+            "Wettbewerbsanalyse",
+            "Kundenumfrage",
+            "Prototyp"
+          ],
+          "modules": ["Projektmanagement"],
+          "fileFormat": ["pdf"]
+        },
+        "teaserImg": "business-idea.jpg",
+        "description": "Methoden und Ansätze zur Bewertung und Validierung einer Geschäftsidee, um deren Marktchancen, Kundenbedürfnisse und Rentabilität zu prüfen, bevor man ein Startup gründet.",
+        "content": ""
+      },
+      {
+        "id": "2",
+        "date": "2024-02-02T04:14:54-08:00",
+        "draft": false,
+        "title": "Wie bewältige ich Stress?",
+        "author": "John Doe",
+        "tags": {
+          "projectphase": [
+            "Projektstart",
+            "Projektdurchführung",
+            "Projektabschluss"
+          ],
+          "keywords": [
+            "Stressmanagement",
+            "Entspannungstechniken",
+            "Meditation",
+            "Achtsamkeit",
+            "Gesundheit",
+            "Work-Life-Balance"
+          ],
+          "modules": ["Sressmanagement"],
+          "fileFormat": ["mp4"]
+        },
+        "teaserImg": "stressed.jpg",
+        "description": "Strategien und Techniken zur Bewältigung von Stress, einschließlich Zeitmanagement, Entspannungsübungen, Priorisierung von Aufgaben und Kommunikationstechniken.",
+        "content": ""
+      },
+      {
+        "id": "3",
+        "date": "2024-02-02T04:14:54-08:00",
+        "draft": false,
+        "title": "Welche Techniken verbessern die Zusammenarbeit in einem Team?",
+        "author": "Monika Engelen",
+        "tags": {
+          "projectphase": [
+            "Projektstart",
+            "Projektdurchführung",
+            "Projektabschluss"
+          ],
+          "keywords": [
+            "Teamarbeit",
+            "Kommunikation",
+            "Konfliktmanagement",
+            "Zusammenarbeit",
+            "Führung",
+            "Motivation"
+          ],
+          "modules": ["Betriebswirtschaftslehre"],
+          "fileFormat": ["pdf"]
+        },
+        "teaserImg": "team-kommunikation.jpg",
+        "description": "Eine Untersuchung verschiedener Techniken und Ansätze, um die Zusammenarbeit und Effizienz in einem Team zu verbessern, wie z.B. agile Methoden, regelmäßige Feedback-Sitzungen und klare Kommunikationskanäle.",
+        "content": ""
+      },
+      {
+        "id": "4",
+        "date": "2024-02-02T04:14:54-08:00",
+        "draft": false,
+        "title": "Wie arbeite ich im Team?",
+        "author": "Monika Engelen",
+        "tags": {
+          "projectphase": [
+            "Projektstart",
+            "Projektdurchführung",
+            "Projektabschluss"
+          ],
+          "keywords": [
+            "Teamarbeit",
+            "Kommunikation",
+            "Konfliktmanagement",
+            "Zusammenarbeit",
+            "Motivation"
+          ],
+          "modules": ["Projektmanagement"],
+          "fileFormat": ["mp4"]
+        },
+        "teaserImg": "team-arbeit.jpg",
+        "description": "Tipps und Best Practices für eine effektive Zusammenarbeit in einem Team, einschließlich klarer Rollenverteilung, offener Kommunikation und konstruktivem Feedback.",
+        "content": ""
+      },
+      {
+        "id": "5",
+        "date": "2024-02-02T04:14:54-08:00",
+        "draft": false,
+        "title": "Wie baue ich eine Präsentation auf?",
+        "author": "Monika Engelen",
+        "tags": {
+          "projectphase": ["Projektidee", "Projektabschluss"],
+          "keywords": [
+            "Präsentation",
+            "Aufbau",
+            "Visualisierung",
+            "Präsentationstechniken",
+            "Ziele"
+          ],
+          "modules": [
+            "Projektmanagement",
+            "Screendesign",
+            "Betriebswirtschaftslehre"
+          ],
+          "fileFormat": ["pdf"]
+        },
+        "teaserImg": "praesentation-aufbau.jpg",
+        "description": "Eine Anleitung zum strukturierten Aufbau einer Präsentation, einschließlich der Festlegung von Zielen, Auswahl relevanter Inhalte, Gestaltung von Visuals und Präsentationstechniken.",
+        "content": ""
+      },
+      {
+        "id": "6",
+        "date": "2024-02-02T04:14:54-08:00",
+        "draft": false,
+        "title": "Wie erstelle ich eine Agenda?",
+        "author": "Raphaela Groten",
+        "tags": {
+          "projectphase": [
+            "Projektstart",
+            "Projektdurchführung",
+            "Projektabschluss"
+          ],
+          "keywords": [
+            "Agenda",
+            "Meeting",
+            "Veranstaltung",
+            "Zeitplanung",
+            "Priorisierung"
+          ],
+          "modules": ["Projektmanagement"],
+          "fileFormat": ["pdf"]
+        },
+        "teaserImg": "agenda.jpg",
+        "description": "Schritte und Richtlinien zur Erstellung einer effektiven Agenda für Meetings oder Veranstaltungen, einschließlich der Festlegung von Zielen, Priorisierung von Themen und Zeitplanung.",
+        "content": ""
+      },
+      {
+        "id": "7",
+        "date": "2024-02-02T04:14:54-08:00",
+        "draft": false,
+        "title": "Wie fördere ich effektive Kommunikation im Team?",
+        "author": "Monika Engelen",
+        "tags": {
+          "projectphase": ["Projektstart", "Projektdurchführung"],
+          "keywords": [
+            "Kommunikation",
+            "Teamarbeit",
+            "Konfliktmanagement",
+            "Zusammenarbeit",
+            "Motivation"
+          ],
+          "modules": ["Projektmanagement"],
+          "fileFormat": ["pdf"]
+        },
+        "teaserImg": "nerds-with-computers.jpg",
+        "description": "Strategien und Praktiken zur Förderung einer offenen, klaren und effektiven Kommunikation innerhalb eines Teams, einschließlich regelmäßiger Meetings, klarer Kommunikationskanäle und Konfliktlösungstechniken.",
+        "content": ""
+      },
+      {
+        "id": "8",
+        "date": "2024-02-02T04:14:54-08:00",
+        "draft": false,
+        "title": "Wie halte ich einen Pitch?",
+        "author": "Monika Engelen",
+        "tags": {
+          "projectphase": ["Projektidee", "Projektabschluss"],
+          "keywords": [
+            "Pitch",
+            "Präsentation",
+            "Überzeugung",
+            "Investoren",
+            "Geschäftsidee"
+          ],
+          "modules": ["Projektmanagement"],
+          "fileFormat": ["mp4"]
+        },
+        "teaserImg": "presentation.jpg",
+        "description": "Tipps und Best Practices zur Vorbereitung und Durchführung eines überzeugenden Pitches, einschließlich der Strukturierung des Inhalts, Präsentationstechniken und der Beantwortung von Fragen.",
+        "content": "/videos/pitch-basics.mp4"
+      },
+      {
+        "id": "9",
+        "date": "2024-02-02T04:14:54-08:00",
+        "draft": false,
+        "title": "Wie organisiere ich mein Lernen?",
+        "author": "Monika Engelen",
+        "tags": {
+          "projectphase": ["Projektstart", "Projektdurchführung"],
+          "keywords": [
+            "Lernen",
+            "Organisation",
+            "Zeitmanagement",
+            "Selbstmanagement",
+            "Effizienz"
+          ],
+          "modules": ["Projektmanagement", "Entwicklungsprojekt"],
+          "fileFormat": ["pdf"]
+        },
+        "teaserImg": "lernen-organisieren.jpg",
+        "description": "Methoden und Werkzeuge zur effektiven Organisation und Planung des Lernprozesses, einschließlich Zeitmanagement, Auswahl von Lernmaterialien und Nutzung von Lernstrategien.",
+        "content": ""
+      },
+      {
+        "id": "10",
+        "date": "2024-02-02T04:14:54-08:00",
+        "draft": false,
+        "title": "Wie priorisiere ich (ein Backlog)?",
+        "author": "Raphaela Groten",
+        "tags": {
+          "projectphase": ["Projektstart"],
+          "keywords": [
+            "Priorisierung",
+            "Backlog",
+            "Agile Methoden",
+            "Scrum",
+            "Kanban"
+          ],
+          "modules": ["Projektmanagement"],
+          "fileFormat": ["pdf"]
+        },
+        "teaserImg": "girls-in-front.jpg",
+        "description": "Techniken und Ansätze zur Priorisierung von Aufgaben und Projekten in einem Backlog, um die Effizienz und den Nutzen zu maximieren.",
+        "content": ""
+      },
+      {
+        "id": "11",
+        "date": "2024-02-02T04:14:54-08:00",
+        "draft": false,
+        "title": "Wie Strukturiere ich einen Pitch?",
+        "author": "Monika Engelen",
+        "tags": {
+          "projectphase": ["Projektidee", "Projektstart"],
+          "keywords": [
+            "Pitch",
+            "Präsentation",
+            "Überzeugung",
+            "Strukturieren",
+            "Geschäftsidee"
+          ],
+          "modules": ["Projektmanagement"],
+          "fileFormat": ["pdf"]
+        },
+        "teaserImg": "pitch-strukturieren.jpg",
+        "description": "Schritte und Richtlinien zur strukturierten Gestaltung eines Pitches, einschließlich der Festlegung von Zielen, Auswahl relevanter Inhalte, Aufbau einer überzeugenden Geschichte und Präsentationstechniken.",
+        "content": ""
+      }
+    ]
+  }
