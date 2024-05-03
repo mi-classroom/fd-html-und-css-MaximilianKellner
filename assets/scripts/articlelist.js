@@ -1,9 +1,22 @@
 const ArticleListURL = 'https://gist.githubusercontent.com/vschaefer/8d26be957bbc8607f60da5dd1b251a78/raw/49ddd7c2636fb722912d91107aff55c79ddf05a8/articles.json';
+let currentData = null;
 
 document.addEventListener('DOMContentLoaded', function(){
     initArticleList();
 });
 
+function initFilters(){
+    const filterButtons = document.querySelectorAll('[data-js-category="keywords"] [data-js-filter]');
+
+    filterButtons.forEach(function(button){
+        button.addEventListener('click', function(event){
+            console.log('click');
+            const filter = event.currentTarget.getAttribute('data-js-filter');
+            const filteredArticles = filterArticles(filter);
+            renderArticleList(filteredArticles);
+        });
+    });
+}
 
 
 function initArticleList(){
@@ -12,14 +25,23 @@ const responsePromise = fetch(ArticleListURL)
 responsePromise.then(function(response){
     console.log(response);
 
-    const DataPromise = response.json();
-    DataPromise.then(function(data){
+    const dataPromise = response.json();
+    dataPromise.then(function(data){
     
+        currentData = data;
         console.log(data);
         renderArticleList(data.articles);
+        initFilters();
 
     })
 });
+}
+
+function filterArticles(filterValue){
+    const filteredArticles = currentData.articles.filter(function(article){
+        return article.tags.keywords.includes(filterValue);
+    });
+    return filteredArticles;
 }
 
 function renderArticleList(articles){
@@ -37,9 +59,10 @@ function renderArticleList(articles){
             <h3>${article.title}</h3>
             <address>${article.author}</address>
             <ul class="tag-list">
-              <li>Präsentation</li>
-              <li>PPT</li>
-              <li>Vortrag</li>
+              ${article.tags.fileFormat.map((tag) => `<li>${tag}</li>`).join('')}
+              ${article.tags.keywords.map((tag) => `<li>${tag}</li>`).join('')}
+              ${article.tags.modules.map((tag) => `<li>${tag}</li>`).join('')}
+              ${article.tags.projectphase.map((tag) => `<li>${tag}</li>`).join('')}
             </ul>
           </figcaption>
         </figure>
